@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Satheshimman/flipkart-website.git/static/css/main.7a4fa4bf.css",
+    "main.js": "/Satheshimman/flipkart-website.git/static/js/main.210793af.js",
+    "static/js/787.f5e1d206.chunk.js": "/Satheshimman/flipkart-website.git/static/js/787.f5e1d206.chunk.js",
+    "static/media/slick.svg": "/Satheshimman/flipkart-website.git/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Satheshimman/flipkart-website.git/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Satheshimman/flipkart-website.git/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Satheshimman/flipkart-website.git/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Satheshimman/flipkart-website.git/index.html",
+    "main.7a4fa4bf.css.map": "/Satheshimman/flipkart-website.git/static/css/main.7a4fa4bf.css.map",
+    "main.210793af.js.map": "/Satheshimman/flipkart-website.git/static/js/main.210793af.js.map",
+    "787.f5e1d206.chunk.js.map": "/Satheshimman/flipkart-website.git/static/js/787.f5e1d206.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a4fa4bf.css",
+    "static/js/main.210793af.js"
+  ]
+}
