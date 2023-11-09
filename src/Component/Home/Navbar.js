@@ -72,11 +72,15 @@ const [arrlen,setarrlen]=useState(0)
   const gocart=()=>{
     nav("/cart")
   }
+  const gohome=()=>{
+    nav("/")
+  }
 const getsearch=()=>{  
    
   nav("/result")
   
 }
+
 const go=()=>{
   nav("/search")
   
@@ -137,7 +141,7 @@ useEffect(cartlen,[store.array])
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>   
-      <Box sx={{padding:"10px 30px"}}>
+      <Box sx={{padding:"10px 30px",cursor:"pointer"}}>
           
           <ul class="navli">
               <li>My Account</li>
@@ -181,7 +185,7 @@ useEffect(cartlen,[store.array])
 
         <Container>
         <Box sx={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-          <Box sx={{width:{sm:"50%",lg:"10%"}}}>
+          <Box sx={{width:{sm:"50%",lg:"10%"},cursor:"pointer"}} onClick={gohome}>
               <Box sx={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
                   <Box sx={{textAlign:"start"}}>
                   <Typography
@@ -208,55 +212,47 @@ useEffect(cartlen,[store.array])
           </Box>
 
           <Box sx={{width:{lg:"40%"}}}>
-              <Box sx={{position:"relative",display:{xs:"none",md:"block",lg:"block"}}}>
+              <Box sx={{position:"relative",display:{xs:"none",md:"block",lg:"block"},cursor:"pointer"}}>
                     <Search >
                       <StyledInputBase
                         placeholder="Search…"
                         inputProps={{ 'aria-label': 'search' }}
-                        sx={{width:"50ch",marginLeft:"5px",backgroundColor:"white",height:"33px", color:"blue"}}
+                        sx={{width:"50ch",marginLeft:"5px",backgroundColor:"white",height:"33px", color:"blue",cursor:"pointer"}}
                         onChange={setvalue}
                         onClick={go}
                         
                         
                       />
                     </Search>
-                  <Typography component="div" variant='i' sx={{color:"blue",position:"absolute",top:"25%",right:"10px"}}>
+                  <Typography component="div" variant='i' sx={{color:"blue",position:"absolute",top:"25%",right:"10px",cursor:"pointer"}}>
                         <SearchIcon onClick={getsearch}/>
                   </Typography>
               </Box>
           </Box>
 
           <Box sx={{width:{lg:"50%"},display:{xs:"none",lg:"block"},margin:"0px 5px 0px 10px"}}>
-              <Box sx={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+              <Box sx={{display:"flex",justifyContent:"space-between",alignItems:"center",cursor:"pointer"}}>
                  <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600"}}>
                     <Typography component="" variant='p' sx={{}}>
                        My Account
                     </Typography>
-
-                    <Typography component="" variant='i' sx={{marginTop:"6px"}}>
-                        <KeyboardArrowDownIcon/>
-                    </Typography>
                  </Box>
 
-                 <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600"}}>
+                 <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600",cursor:"pointer"}}>
                     <Typography component="" variant='p' sx={{}}>
                        Became a Seller
                     </Typography>
                  </Box>
 
-                 <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600"}}>
+                 <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600",cursor:"pointer"}}>
                     <Typography component="" variant='p' sx={{}}>
                        More
                     </Typography>
-
-                    <Typography component="" variant='i' sx={{marginTop:"6px"}}>
-                        <KeyboardArrowDownIcon/>
-                    </Typography>
                  </Box>
 
-                 <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600"}}>
+                 <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600",cursor:"pointer"}} onClick={gofav}>
                     <Typography component="" variant='p' sx={{}}>
-                       Favourite
+                       Favourites
                     </Typography>
 
                     <Typography component="" variant='i' sx={{marginTop:"6px"}}>
@@ -265,7 +261,7 @@ useEffect(cartlen,[store.array])
                  </Box>
 
 
-                 <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600",position:"relative"}} onClick={gocart}>
+                 <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",fontWeight:"600",position:"relative",cursor:"pointer"}} onClick={gocart}>
                     <Typography component="" variant='i' sx={{marginTop:"6px",fontSize:"25px"}}>
                         <BsCart2/>
                     </Typography>

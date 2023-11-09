@@ -12,7 +12,7 @@ import { Result } from "./search/Result"
 
 export const Routing=()=>{
     return(
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
           <Navbar/>
            <Routes>
              <Route path="/" element={<Home/>}></Route>

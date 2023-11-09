@@ -265,11 +265,11 @@ function ChildModal() {
 
                               
                               <Box sx={{display:"flex",justifyContent:"space-between",alignItems:"center",margin:"5px 0px"}}>
-                                            <i style={{border:"1px solid #80808069",padding:"8px 8px",borderRadius:"50%",display:"flex",justifyContent:"center",alignItems:"center"}} onClick={()=>plus(a,b)}><AiOutlinePlus/></i>
+                                            <i style={{border:"1px solid #80808069",padding:"8px 8px",borderRadius:"50%",display:"flex",justifyContent:"center",alignItems:"center",cursor:"pointer"}} onClick={()=>plus(a,b)}><AiOutlinePlus/></i>
 
                                             <p style={{border:"1px solid #80808069",padding:"2px 20px"}}>{a.quantity}</p>
 
-                                            <i style={{border:"1px solid #80808069",padding:"8px 8px",borderRadius:"50%",display:"flex",justifyContent:"center",alignItems:"center"}} onClick={()=>minus(a,b)}><AiOutlineMinus/></i>
+                                            <i style={{border:"1px solid #80808069",padding:"8px 8px",borderRadius:"50%",display:"flex",justifyContent:"center",alignItems:"center",cursor:"pointer"}} onClick={()=>minus(a,b)}><AiOutlineMinus/></i>
                               </Box>
                          </Box>  
 
@@ -300,7 +300,7 @@ function ChildModal() {
                              </Box> 
                              <Box sx={{fontSize:"20px",fontWeight:"700",padding:"0px 38px 0px 10px",}}>
                                <Box sx={{display:{xs:"flex",sm:"block",lg:"flex"},justifyContent:"space-between",alignItems:"center"}}>
-                                    <Box sx={{margin:{xs:"-5px 0px 0px 0px",sm:"-20px 0px 0px 0px",md:"",lg:"16px 0px 40px 0px"}}}>
+                                    <Box sx={{margin:{xs:"-5px 0px 0px 0px",sm:"-20px 0px 0px 0px",md:"",lg:"16px 0px 40px 0px"},cursor:"pointer"}}>
                                     <p onClick={()=>remove(a,b)}>Remove</p>
                                     </Box>
                                     <Box sx={{display:{xs:"none",sm:"block",md:"block",lg:"block"},margin:{xs:"",sm:"",md:"",lg:"19px 0px 40px 0px"}}}>
@@ -319,13 +319,11 @@ function ChildModal() {
                    
 
 
-                    <Box className="chotta" sx={{display:"flex",justifyContent:{xs:"end",sm:"space-between",md:"space-between",lg:"space-between"},alignItems:"center"}}>
+                    <Box className="chotta" sx={{display:"flex",justifyContent:"end",alignItems:"center"}}>
 
-                        <Box sx={{display:{xs:"none",sm:"block",md:"block",lg:"block"}}}>
-                            <button onClick={gofav}>favourites</button>
-                        </Box>
+                       
                        <Box>
-                        <button onClick={handleOpen1}>Place Order</button>
+                        <button style={{cursor:"pointer"}} onClick={handleOpen1}>Place Order</button>
 
                         <Modal
                         open={open1}

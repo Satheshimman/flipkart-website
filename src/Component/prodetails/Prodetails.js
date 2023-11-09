@@ -110,18 +110,18 @@ const shop=(s,r)=>{
                          sx={{width:"100%",padding:"20px 10px",height:"400px" }}
                         >
                         </Typography>
-                        <Typography component="i" variant="i" sx={{position:"absolute",position: "absolute",fontSize: "28px",top: "14px",    right: "36px", backgroundColor:"whitesmoke",boxShadow:"5px 5px 5px white",color:a.Isfav ? "red":"#8080806b", padding: "10px", borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center"}}onClick={()=>fav(a,b)}>
+                        <Typography component="i" variant="i" sx={{position:"absolute",position: "absolute",fontSize: "28px",top: "14px",    right: "36px", backgroundColor:"whitesmoke",boxShadow:"5px 5px 5px white",color:a.Isfav ? "red":"#8080806b", padding: "10px", borderRadius: "50%", display: "flex", justifyContent: "center", alignItems: "center",cursor:"pointer"}}onClick={()=>fav(a,b)}>
                             <AiFillHeart/>
                         </Typography>
 
 
-                        <Box sx={{position:"absolute",top:"10px",left:"10px",fontSize:"30px",display:{xs:"block",sm:"none",lg:"none"}}} onClick={()=>addcart(a,b)}>
+                        <Box sx={{position:"absolute",top:"10px",left:"10px",fontSize:"30px",display:{xs:"block",sm:"none",lg:"none"},cursor:"pointer"}} onClick={()=>addcart(a,b)}>
                         
                             {a.Iscart ? <i>< BsFillCartCheckFill/></i> :<i><AiOutlineShoppingCart/></i>}
                         </Box>
                     </Box>
 
-                    <Box sx={{display:"flex",justifyContent:{xs:"center",sm:"space-between",md:"space-between",lg:"sapce-between"},alignItems:"center",margin:"30px 0px",flexWrap:{xs:"wrap",lg:"nowrap"}}} >
+                    <Box sx={{display:"flex",justifyContent:{xs:"center",sm:"space-between",md:"space-between",lg:"sapce-between"},alignItems:"center",margin:"30px 0px",flexWrap:{xs:"wrap",lg:"nowrap"},cursor:"pointer"}} >
                        <Box sx={{display:{xs:"none",sm:"flex",lg:"flex"},justifyContent:"center",alignItems:"center",margin:{xs:"10px 0px"}}} className="btn" onClick={()=>addcart(a,b)}>
                           <Box sx={{marginTop:"2px",fontSize:"30px"}}>
                                  {a.Iscart ? <i>< BsFillCartCheckFill/></i> :<i><AiOutlineShoppingCart/></i>}
@@ -135,7 +135,7 @@ const shop=(s,r)=>{
                        </Box>
 
 
-                       <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",}} className="btn1">
+                       <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",cursor:"pointer"}} className="btn1">
                             <i><BsLightningFill/></i>
                             <button variant="submit" onClick={()=>shop(a,b)}>
                                 BUY NOW

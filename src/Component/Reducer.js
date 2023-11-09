@@ -20,9 +20,13 @@ export const Slice=createSlice({
         result:[],
         list:[],
         price:(""),
+        pageTwoFilter:[]
        
     },
     reducers:{
+        upPageTwoFilter:(state,action)=>{
+          state.pageTwoFilter=action.payload
+        },
        uparr:(state,action)=>{
          state.best=action.payload
        },
@@ -73,4 +77,4 @@ export const Slice=createSlice({
 })
 
 export default Slice.reducer
-export const {uparr,updet,upcart,upcarousel1,uparray,upinvalue,upsearch,upbuynow,upvaluearray,upfav,upresult,uplist,upprice}=Slice.actions
+export const {upPageTwoFilter,uparr,updet,upcart,upcarousel1,uparray,upinvalue,upsearch,upbuynow,upvaluearray,upfav,upresult,uplist,upprice}=Slice.actions
