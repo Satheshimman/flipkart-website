@@ -55,8 +55,6 @@ const guna=(val,ind)=>{
                             <Box sx={{position:"relative"}} className="best">
                                 <Box sx={{ width:"100%",height:"250px",cursor:"pointer"}}>
                                     <img src={a.img} style={{width:"100%",height:"230px",padding:"10px 10px"}}/>
-
-                                    
                                 </Box>
 
 

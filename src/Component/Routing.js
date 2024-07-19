@@ -9,7 +9,6 @@ import {Prodetails} from "./prodetails/Prodetails"
 import { Favourite } from "./Favourites/Favourite"
 import { Search } from "./search/Search"
 import { Result } from "./search/Result"
-
 export const Routing=()=>{
     return(
         <BrowserRouter>
